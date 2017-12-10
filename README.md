@@ -1,2 +1,2 @@
-# fe-core-3
+# goit-fe-course
 Practice homework
