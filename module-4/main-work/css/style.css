@@ -121,18 +121,18 @@ h3 {
 }
 
 .offer-list {
-	position: relative;
 	list-style-type: none;
-	line-height: 2.5;
 	margin: 23px 160px 0 23px;
 	column-count: 2;
 	font-size: 14px;
+	line-height: 2;
 }
 
 .offerlist-item::before {
-	content: url(../img/right-arrow.png);
-	position: absolute;
-	margin-left: -20px;
+	content: '\2192';
+	margin-right: 13px;
+	color: blue;
+	line-height: 14px;
 }
 
 /* TESTIMONIAL*/
@@ -140,13 +140,12 @@ h3 {
 .testimonial {
 	display: inline-block;
 	width: 211px;
-	position: relative;
 }
 
 .quote {
 	border: 2px solid #E1DDDD;
 	border-radius: 5px;
-	position: absolute;
+	position: relative;
 	width: 211px;
 	height: 191px;
 	background-color: #FFF4E9;
@@ -160,31 +159,27 @@ blockquote::after {
     content: '\00201D';
 }
 blockquote {
+	position: absolute;
     margin: 23px;
     font-size: 14px;
     color: #173255;
 }
 
-.quote::before, .quote::after {
+.quote::after {
 	content: '';
 	position: absolute;
-	left: 90px;
-	bottom: -40px;
-	border: 10px solid transparent;
-    border-top: 30px solid #E1DDDD;
-}
-
-.quote::after {
-	border-top: 30px solid #FFF4E9;
-    bottom: -40px;
+	left: 50%;
+	margin-left: -15px;
+	bottom: -30px;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+    border-top: 30px solid #FFF4E9;
 }
 
 .author {
-    position: absolute;
-    display: inline-block;
+	margin-top: 65px;
     text-align: center;
     padding-left: 17px;
-    bottom: -340px;
 }
 
 span {
